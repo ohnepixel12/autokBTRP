@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:"he he " 
+                        "na na "
+                        "ar as"
+                        "fo fo";
+     gap: 10px;
+}
+
+img{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 3%;
+}
+
+h1{
+    color: darkgreen;
+}
+
+h2{
+    color: darkgreen;
+}
+
+body{
+    margin: auto;
+    max-width: 1000px;
+}
+
+
+.Benz{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+header{
+    grid-area: he;
+}
+
+nav{
+    grid-area: na;
+    background-color: green;
+    justify-content: left;
+    color: white;
+    
+}
+
+article{
+    grid-area: ar;
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+aside{
+    grid-area: as;
+}
+
+footer{
+    grid-area: fo;
+}
+
+
+@media screen and (max-width:800px)  {
+    main{
+
+        grid-template-columns: 1fr;
+        grid-template-areas: "he "
+                                "na "
+                               "ar "
+                               "as"
+                               "f ";
+
+    }
+    article{
+        grid-template-columns: 1fr;
+    }
+}
+
+footer{
+    text-align: center;
+    color: darkgreen;
+}
