@@ -85,3 +85,7 @@ footer{
     text-align: center;
     color: darkgreen;
 }
+
+a{
+    text-decoration: none;
+}
